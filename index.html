@@ -1,13 +1,79 @@
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
     <title>Cheeky Doughnuts - Coming Soon!</title>
+    <meta name="description" content="cheeky doughnuts. made with love, made to order.">
+    <meta property="og:title" content="cheeky doughnuts">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.cheekydoughnuts.com">
+    <meta property="og:description" content="cheeky doughnuts. made with love, made to order.">
     <style>
+      @font-face {
+        font-family: Wanted;
+        src: url("assets/font/Wanted.otf") format("opentype");
+      }  
+
+      *,
+      ::after,
+      ::before {
+        box-sizing: border-box;
+      }
+      
+      img {
+        max-width: 100%;
+        height: auto;
+        display: inline-block;
+      }
+
+
       html,
       body {
         background-color: #222;
+        color: #fbfbf2;
+        margin: 0;
+        font-family: Wanted, Arial, Helvetica, sans-serif;
       }
+
+      body {
+        background-image: url(assets/images/bg.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: center;
+        text-align: center;
+        padding: 5vh 5vw;
+        margin: 0;
+        height: 100vh;
+        font-size: 2.5rem;
+      }
+
+      @supports(padding: max(0px)) {
+        body {
+          padding-left: max(5vw, env(safe-area-inset-left));
+          padding-right: max(5vw, env(safe-area-inset-right));
+        }
+      }
+
+      body > h1 {
+        max-width: 600px;
+        margin: 0;
+        padding: 0;
+      }
+
+      body > p {
+        text-shadow: 1px 1px 6px #222, 1px -1px 6px #222, -1px 1px 6px #222, -1px -1px 6px #222;
+        padding: 0;
+        margin: .5em 0 0;
+      }
+
     </style>
   </head>
   <body>
+    <h1><img src="assets/images/logo.png" alt="Cheeky Doughnuts, made with love, made to order" /></h1>
+    <p>Coming Fall 2024 to Kimberly, WI</p>
   </body>
 </html>
